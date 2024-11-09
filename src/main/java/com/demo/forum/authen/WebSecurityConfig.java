@@ -55,7 +55,7 @@ public class WebSecurityConfig   {
                 .defaultSuccessUrl("/post")
                 .permitAll()
             )
-            .logout(logout -> logout.logoutSuccessUrl("/user/login").permitAll()
+            .logout(logout -> logout.logoutUrl("/logout").logoutSuccessUrl("/user/login").permitAll()
         );
          
         return http.build();

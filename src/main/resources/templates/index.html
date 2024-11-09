@@ -69,6 +69,12 @@
                                 <li><a href="/user/register">Register</a></li>
                                 <li><a href="#">All User</a></li>
                                 <li><a href="#">My Account</a></li>
+                                <li>
+                                    <form id="logout-form" th:action="@{/logout}" method="post">
+                                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                                    </form>
+                                    <a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
