@@ -1,7 +1,7 @@
 package com.demo.forum.controller;
 
-import com.demo.forum.repository.UserRepository;
-import com.demo.forum.model.User;
+import com.demo.forum.model.*;
+import com.demo.forum.repository.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

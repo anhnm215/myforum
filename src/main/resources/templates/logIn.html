@@ -23,7 +23,7 @@
       <div class="description">Hello there, Log In</div> 
       <form th:action="@{/user/login}" method="post" role="form" th:object="${user}">
         <input type="email" th:field="*{email}" id="email" name="email" placeholder="Email" required/>
-        <input th:field="*{password}" type="password" id="password" name="password" placeholder="Enter your Password" required>
+        <input th:field="*{password}" type="password" id="password" name="password" placeholder="Enter your Password" required/>
         <div class="text-center">
           <div class="button" onclick="javascript:document.forms[0].submit();">LOG IN</div>
             <a href="/user/register"><div class="button">Create an account</div></a>
