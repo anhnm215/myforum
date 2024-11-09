@@ -103,7 +103,7 @@
                     <td th:text="${user.firstName}">First Name</td>
                     <td th:text="${user.lastName}">Last Name</td>
                 </tr> -->
-                            
+                <th:block th:if="${listPosts}">
                             <div th:each="post: ${listPosts}" class="question-type2033">
                                 <div class="row">
                                     <div class="col-md-1">
@@ -133,6 +133,7 @@
                                     </div>
                                 </div>
                             </div>
+                </th:block>
                             
                             <nav aria-label="Page navigation">
                                 <ul class="pagination">
@@ -158,6 +159,7 @@
                         
                         <section id="content2">
                            <!--Most Response Content Section -->
+                           <th:block th:if="${listPosts}">
                            <div th:each="post: ${listPosts}" class="question-type2033">
                             <div class="row">
                                 <div class="col-md-1">
@@ -187,6 +189,7 @@
                                 </div>
                             </div>
                         </div>
+                    </th:block>
                             <nav aria-label="Page navigation">
                                 <ul class="pagination">
                                   <li>
@@ -212,6 +215,7 @@
                         
                         <section id="content3">
                               <!--Recently answered Content Section -->
+                              <th:block th:if="${listPosts}">
                               <div th:each="post: ${listPosts}" class="question-type2033">
                                 <div class="row">
                                     <div class="col-md-1">
@@ -241,6 +245,7 @@
                                     </div>
                                 </div>
                             </div>
+                            </th:block>
                             <nav aria-label="Page navigation">
                                 <ul class="pagination">
                                   <li>
@@ -266,6 +271,7 @@
                     
                                  <section id="content4">
                                   <!--No answered Content Section -->
+                                  <th:block th:if="${listPosts}">
                                   <div th:each="post: ${listPosts}" class="question-type2033">
                                     <div class="row">
                                         <div class="col-md-1">
@@ -295,6 +301,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                  </th:block>
                              <!--End of content-4-->
                              <nav aria-label="Page navigation">
                                 <ul class="pagination">
